@@ -123,7 +123,15 @@ class _HomePage extends State<HomePage> {
               SizedBox(
                 height: 20,
               ),
-              Features()
+              Features(),
+              SizedBox(height: 50,),
+              Text('Made by Tejas Raibagi',
+              style: TextStyle(
+                fontFamily: 'Poppins',
+                fontWeight: FontWeight.w700,
+                fontSize: 15
+              ),
+              ),
             ],
           ),
         ),

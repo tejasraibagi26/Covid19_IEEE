@@ -17,6 +17,7 @@ class DosDonts extends StatelessWidget {
           ),
         ),
         body: Container(
+          alignment: Alignment.centerLeft,
           child: Dos(),
         ));
   }
