@@ -28,6 +28,18 @@ class _HomePage extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title:Text(
+                  'COVID - 19 TRACKER',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 30,
+                      fontFamily: 'Poppins',
+                      fontWeight: FontWeight.w700),
+                ),
+      ),
       body: SafeArea(
         child: Container(
           height: double.infinity,
@@ -36,65 +48,57 @@ class _HomePage extends State<HomePage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              SizedBox(
-                height: 20,
-              ),
-              Container(
-                margin: EdgeInsets.only(top: 10),
-                child: Text(
-                  'COVID - 19 TRACKER',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 30,
-                      fontFamily: 'Poppins',
-                      fontWeight: FontWeight.w700),
-                ),
-              ),
+              // SizedBox(
+              //   height: 20,
+              // ),
+              // Container(
+              //   margin: EdgeInsets.only(top: 10),
+              //   child: 
+              // ),
               SizedBox(
                 height: 30,
               ),
-              Container(
-                height: 100,
-                color: Colors.orange.shade50,
-                child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      Padding(
-                        padding: const EdgeInsets.all(10.0),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: <Widget>[
-                            Icon(
-                              Icons.warning,
-                              color: Colors.orange.shade400,
-                            ),
-                            SizedBox(
-                              width: 5,
-                            ),
-                            Text('WARNING!',
-                                style: TextStyle(
-                                    color: Colors.orange.shade400,
-                                    fontFamily: 'Poppins',
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.w700))
-                          ],
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 10.0),
-                        child: Text(
-                          'Do Not Panic! Stay Home, Stay Safe!',
-                          style: TextStyle(
-                              color: Colors.orange.shade400,
-                              fontWeight: FontWeight.w500,
-                              fontSize: 20,
-                              fontFamily: 'Poppins'),
-                        ),
-                      )
-                    ]),
-              ),
+              // Container(
+              //   height: 100,
+              //   color: Colors.orange.shade50,
+              //   child: Column(
+              //       mainAxisAlignment: MainAxisAlignment.center,
+              //       crossAxisAlignment: CrossAxisAlignment.start,
+              //       children: <Widget>[
+              //         Padding(
+              //           padding: const EdgeInsets.all(10.0),
+              //           child: Row(
+              //             mainAxisAlignment: MainAxisAlignment.start,
+              //             children: <Widget>[
+              //               Icon(
+              //                 Icons.warning,
+              //                 color: Colors.orange.shade400,
+              //               ),
+              //               SizedBox(
+              //                 width: 5,
+              //               ),
+              //               Text('WARNING!',
+              //                   style: TextStyle(
+              //                       color: Colors.orange.shade400,
+              //                       fontFamily: 'Poppins',
+              //                       fontSize: 20,
+              //                       fontWeight: FontWeight.w700))
+              //             ],
+              //           ),
+              //         ),
+              //         Padding(
+              //           padding: const EdgeInsets.only(left: 10.0),
+              //           child: Text(
+              //             'Do Not Panic! Stay Home, Stay Safe!',
+              //             style: TextStyle(
+              //                 color: Colors.orange.shade400,
+              //                 fontWeight: FontWeight.w500,
+              //                 fontSize: 20,
+              //                 fontFamily: 'Poppins'),
+              //           ),
+              //         )
+              //       ]),
+              // ),
               SizedBox(
                 height: 20,
               ),
@@ -125,12 +129,15 @@ class _HomePage extends State<HomePage> {
               ),
               Features(),
               SizedBox(height: 50,),
-              Text('Made by Tejas Raibagi',
-              style: TextStyle(
-                fontFamily: 'Poppins',
-                fontWeight: FontWeight.w700,
-                fontSize: 15
-              ),
+              Container(
+                alignment: Alignment.bottomCenter,
+                child: Text('Made by Tejas Raibagi',
+                style: TextStyle(
+                  fontFamily: 'Poppins',
+                  fontWeight: FontWeight.w700,
+                  fontSize: 15
+                ),
+                ),
               ),
             ],
           ),

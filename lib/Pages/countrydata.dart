@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
@@ -11,7 +10,7 @@ class CountryData extends StatefulWidget {
 
 class _CountryDataState extends State<CountryData> {
 
-   List countryData;
+  List countryData;
   fetchCountryData() async{
     http.Response response = await http.get('https://corona.lmao.ninja/v2/countries');
     setState(() {
