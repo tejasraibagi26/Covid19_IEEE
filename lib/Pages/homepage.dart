@@ -48,57 +48,9 @@ class _HomePage extends State<HomePage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              // SizedBox(
-              //   height: 20,
-              // ),
-              // Container(
-              //   margin: EdgeInsets.only(top: 10),
-              //   child: 
-              // ),
               SizedBox(
                 height: 30,
               ),
-              // Container(
-              //   height: 100,
-              //   color: Colors.orange.shade50,
-              //   child: Column(
-              //       mainAxisAlignment: MainAxisAlignment.center,
-              //       crossAxisAlignment: CrossAxisAlignment.start,
-              //       children: <Widget>[
-              //         Padding(
-              //           padding: const EdgeInsets.all(10.0),
-              //           child: Row(
-              //             mainAxisAlignment: MainAxisAlignment.start,
-              //             children: <Widget>[
-              //               Icon(
-              //                 Icons.warning,
-              //                 color: Colors.orange.shade400,
-              //               ),
-              //               SizedBox(
-              //                 width: 5,
-              //               ),
-              //               Text('WARNING!',
-              //                   style: TextStyle(
-              //                       color: Colors.orange.shade400,
-              //                       fontFamily: 'Poppins',
-              //                       fontSize: 20,
-              //                       fontWeight: FontWeight.w700))
-              //             ],
-              //           ),
-              //         ),
-              //         Padding(
-              //           padding: const EdgeInsets.only(left: 10.0),
-              //           child: Text(
-              //             'Do Not Panic! Stay Home, Stay Safe!',
-              //             style: TextStyle(
-              //                 color: Colors.orange.shade400,
-              //                 fontWeight: FontWeight.w500,
-              //                 fontSize: 20,
-              //                 fontFamily: 'Poppins'),
-              //           ),
-              //         )
-              //       ]),
-              // ),
               SizedBox(
                 height: 20,
               ),
